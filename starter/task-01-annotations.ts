@@ -18,7 +18,7 @@
  */
 
 // TODO: додай явну анотацію типу / add an explicit type annotation
-export let testCaseTitle: string = "Login with valid credentials";
+export let testCaseTitle: string  = "Login with valid credentials";
 
 // TODO: додай явну анотацію типу / add an explicit type annotation
 export let retryCount: number = 3;

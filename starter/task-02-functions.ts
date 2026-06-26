@@ -39,22 +39,21 @@ export function formatTestName(name: string, suite: string): string {
 
 export function sumDurations(durations: number[]): number {
   // TODO: реалізуй / implement
-  // let total = 0;
-  // for (const duration of durations) {
-  //   total += duration;
-  // }
-  // return total;
-   return durations.reduce((sum, duration) => sum + duration, 0);
+  let total = 0;
+  for (const duration of durations) {
+    total += duration;
+  }
+  return total;
 }
 
 export function withOptionalRetries(name: string, retries?: number): string {
   // TODO: реалізуй / implement
-  return "";
+  return `${name} retries: ${retries ?? 0}`;;
 }
 
 export function withDefaultRetries(name: string, retries: number = 1): string {
   // TODO: реалізуй / implement
-  return "";
+  return `${name} retries: ${retries}`;
 }
 
-export {};
+
